@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const TaskModel = {
   title: { type: String, required: true },
   description: { type: String },
-  status: { type: Number, required: true }
+  status: { type: Number, required: true, default: 1}
 };
 
 const schema = new Schema(TaskModel, { timestamps: true });
